@@ -259,7 +259,7 @@ function ubuntu18_dep {
 
   # Add additional repositories for PHP, Redis, and MariaDB
   add-apt-repository -y ppa:chris-lea/redis-server
-  curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
+  apt-get install mysql-server
 
   # Update repositories list
   apt update
